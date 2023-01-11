@@ -1,0 +1,12 @@
+version: "3"
+services:
+  node-app:
+    build: .
+    ports:
+      - "4000:3000"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    # environment:      //when we have environment vairable or a specific file
+    # - port=3000
+    # env_file
